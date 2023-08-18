@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'medical_chatbot',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

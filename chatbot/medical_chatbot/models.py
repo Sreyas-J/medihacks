@@ -9,7 +9,6 @@ class History(models.Model):
     def __str__(self):
         return self.description
 
-
 class Prompt(models.Model):
     description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
@@ -17,13 +16,11 @@ class Prompt(models.Model):
     def __str__(self):
         return self.description
 
-
 Sex = (
     ('Male', 'Male'),
     ('Female', 'Female'),
     ('Non-binary', 'Non-binary'),
 )
-
 
 class Patient(models.Model):
     user = models.ForeignKey(User, related_name='profile', on_delete=models.CASCADE)

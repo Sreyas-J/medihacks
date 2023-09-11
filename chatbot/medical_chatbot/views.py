@@ -44,6 +44,7 @@ def chat(request):
 
     return Response({'response': chatbot_response})
 
-
-
+@api_view(['GET', 'POST'])
+def login(request):
+    user=User.objects.get(username=request.data.get("username"))
 
